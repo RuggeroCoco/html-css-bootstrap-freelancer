@@ -86,10 +86,26 @@ a {
 .ms_info > p:not(:last-child) {
   margin: 1px solid gray;
 }
+
+.ms_btn {
+  margin-top: 6rem;
+  background-color: hsl(168deg 76% 42%);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
 /* FOOTER */
 .ms_footer-top {
   color: white;
   background-color: var(--ms-footer-color);
+}
+
+.icon > p > i {
+  margin-right: 1rem;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 .ms_footer-bottom {
