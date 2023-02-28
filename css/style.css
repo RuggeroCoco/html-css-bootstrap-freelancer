@@ -3,6 +3,7 @@
   --ms-header-color: #2c3e50;
   --ms-primary-color: #1abc9c;
   --ms-header-height: 70px;
+  --ms-footer-color: #3a546d;
 }
 /* RESET */
 * {
@@ -19,25 +20,79 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
 .ms_header {
   background-color: var(--ms-header-color);
   height: var(--ms-header-height);
 }
 
-.container {
+.container-head {
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
 
+.container-head > a {
+  color: white;
+}
+
+.container-head > a > i {
+  color: gray;
+  border: 1px solid gray;
+  padding: 0.3rem;
+}
 /* MAIN */
-.ms_jumbotron {
+.ms_primary-bg {
   background-color: var(--ms-primary-color);
   color: white;
 }
 
 .ms_avatar {
   width: 200px;
+}
+
+.container-portfolio {
+  padding: 0 2rem;
+}
+
+.col-12 > img {
+  border-radius: 1rem;
+}
+
+.ms_small-container {
+  width: 60%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.download {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.download > i {
+  margin-right: 10px;
+}
+
+.ms_info > p:not(:last-child) {
+  margin: 1px solid gray;
+}
+/* FOOTER */
+.ms_footer-top {
+  color: white;
+  background-color: var(--ms-footer-color);
+}
+
+.ms_footer-bottom {
+  color: white;
+  background-color: var(--ms-header-color);
 }
