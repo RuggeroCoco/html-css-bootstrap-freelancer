@@ -1,6 +1,43 @@
+/* Variables */
+:root {
+  --ms-header-color: #2c3e50;
+  --ms-primary-color: #1abc9c;
+  --ms-header-height: 70px;
+}
 /* RESET */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* HEADER */
+.ms_header {
+  background-color: var(--ms-header-color);
+  height: var(--ms-header-height);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* MAIN */
+.ms_jumbotron {
+  background-color: var(--ms-primary-color);
+  color: white;
+}
+
+.ms_avatar {
+  width: 200px;
 }
