@@ -83,12 +83,18 @@ a {
   margin-right: 10px;
 }
 
-.ms_info > p:not(:last-child) {
-  margin: 1px solid gray;
+.ms_info > div > input,
+textarea {
+  border-width: 0 0 1px 0;
+}
+
+input,
+textarea:focus {
+  outline: none;
 }
 
 .ms_btn {
-  margin-top: 6rem;
+  margin-top: 0.5rem;
   background-color: hsl(168deg 76% 42%);
   padding: 10px;
   border: none;
@@ -101,14 +107,30 @@ a {
   background-color: var(--ms-footer-color);
 }
 
-.icon > p > i {
-  margin-right: 1rem;
+.icon-container > i {
+  margin-right: 0.3rem;
   border: 1px solid white;
   padding: 15px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
 .ms_footer-bottom {
   color: white;
   background-color: var(--ms-header-color);
+}
+
+.head-links {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .bars {
+    display: none;
+  }
+
+  .head-links {
+    display: block;
+  }
 }

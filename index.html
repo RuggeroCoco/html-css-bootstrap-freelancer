@@ -28,7 +28,12 @@
     <header class="ms_header">
       <div class="container-head">
         <a href="">START BOOTSTRAP</a>
-        <a href=""><i class="fa-solid fa-bars"></i></a>
+        <a href="" class="bars"><i class="fa-solid fa-bars"></i></a>
+        <div class="head-links">
+          <a href="" class="text-light me-3">PORTFOLIO</a>
+          <a href="" class="text-light me-3">ABOUT</a>
+          <a href="" class="text-light">CONTACT</a>
+        </div>
       </div>
     </header>
     <!-- MAIN -->
@@ -92,10 +97,12 @@
               </div>
             </div>
           </div>
+          <div class="d-flex justify-content-center align-items-center mt-3">
+            <a class="download" href=""
+              ><i class="fa-solid fa-download"></i>Download</a
+            >
+          </div>
         </div>
-        <a class="download text-center" href=""
-          ><i class="fa-solid fa-download"></i>Download</a
-        >
       </section>
       <!-- CONTACT -->
       <section class="py-4">
@@ -104,12 +111,29 @@
             <h2>CONTACT ME</h2>
             <span>Star</span>
           </div>
-          <div class="ms_info">
-            <p>Name</p>
-            <p>Email Address</p>
-            <p>Phone Number</p>
-            <p>Message</p>
-          </div>
+          <form class="ms_info">
+            <div class="d-flex flex-column mb-3">
+              <label for="name">Name</label>
+              <input id="name" name="name" />
+            </div>
+            <div class="d-flex flex-column mb-3">
+              <label for="name">Email Address</label>
+              <input id="name" name="name" />
+            </div>
+            <div class="d-flex flex-column mb-3">
+              <label for="name">Phone Number</label>
+              <input id="name" name="name" />
+            </div>
+            <div class="d-flex flex-column mb-3">
+              <label for="message">Message</label>
+              <textarea
+                id="w3review"
+                name="w3review"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </div>
+          </form>
           <button class="ms_btn text-center">Send</button>
         </div>
       </section>
@@ -123,14 +147,14 @@
               <h4>LOCATION</h4>
               <p>2215 John Daniel Drive Clark, MO 54243</p>
             </div>
-            <div class="icon col text-center">
+            <div class="col text-center">
               <h4>AROUND THE WEB</h4>
-              <p>
+              <div class="icon-container">
                 <i class="fa-brands fa-facebook-f"></i
                 ><i class="fa-brands fa-google-plus-g"></i
                 ><i class="fa-brands fa-twitter"></i
                 ><i class="fa-brands fa-linkedin-in"></i>
-              </p>
+              </div>
             </div>
             <div class="col text-center">
               <h4>ABAUT FREELANCE</h4>
